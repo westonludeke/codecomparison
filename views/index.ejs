@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+<body>
+<%- include('partials/_header.ejs') %>
+  <main role="main" class="container mt-4">
+    <h1 class="text-center mb-4">CodeComparison</h1>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h2>Original Code</h2>
+        <textarea id="originalCode" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="col-md-6 mb-3">
+        <h2>Changed Code</h2>
+        <textarea id="changedCode" class="form-control" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <button id="compareButton" class="btn btn-primary">Compare</button>
+    </div>
+    <div id="comparisonResult" class="mt-4"></div>
+  </main>
+<%- include('partials/_footer.ejs') %>
+<script src="/js/comparison.js"></script>
+</body>
+</html>
